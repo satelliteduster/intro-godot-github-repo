@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4nh7jb71oxab"]
+
+[ext_resource type="Texture2D" uid="uid://dojdbf2d4ka4p" path="res://sheep.png" id="1_viopl"]
+[ext_resource type="Texture2D" uid="uid://gjpb3bo77il6" path="res://jackal.png" id="2_4p67d"]
+
+[node name="Sheep" type="Sprite2D"]
+position = Vector2(573, 311)
+scale = Vector2(0.0534988, 0.0534988)
+texture = ExtResource("1_viopl")
+
+[node name="Jackal" type="Sprite2D" parent="."]
+position = Vector2(3044.16, -79.817)
+scale = Vector2(4.9899, 4.9899)
+texture = ExtResource("2_4p67d")
