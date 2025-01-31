@@ -1,14 +1,65 @@
-[gd_scene load_steps=3 format=3 uid="uid://b4nh7jb71oxab"]
+[gd_scene load_steps=4 format=3 uid="uid://b4nh7jb71oxab"]
 
 [ext_resource type="Texture2D" uid="uid://dojdbf2d4ka4p" path="res://sheep.png" id="1_viopl"]
 [ext_resource type="Texture2D" uid="uid://gjpb3bo77il6" path="res://jackal.png" id="2_4p67d"]
+[ext_resource type="PackedScene" uid="uid://cxh81s0uoeuxg" path="res://door.tscn" id="3_vlead"]
 
 [node name="Sheep" type="Sprite2D"]
-position = Vector2(573, 311)
+position = Vector2(315, 389)
 scale = Vector2(0.0534988, 0.0534988)
 texture = ExtResource("1_viopl")
 
 [node name="Jackal" type="Sprite2D" parent="."]
-position = Vector2(3044.16, -79.817)
+position = Vector2(9341.11, -56.0766)
 scale = Vector2(4.9899, 4.9899)
 texture = ExtResource("2_4p67d")
+
+[node name="door" parent="." instance=ExtResource("3_vlead")]
+anchor_left = 1.204
+anchor_top = -0.937
+anchor_right = 2.796
+anchor_bottom = 1.09
+offset_left = -53.0513
+offset_top = -1229.64
+offset_right = -53.2759
+offset_bottom = -1228.01
+
+[node name="door2" parent="." instance=ExtResource("3_vlead")]
+anchor_left = -1.761
+anchor_top = -2.055
+anchor_right = -0.877
+anchor_bottom = -0.892
+offset_left = -500.089
+offset_top = -1266.71
+offset_right = -501.438
+offset_bottom = -1265.36
+
+[node name="door3" parent="." instance=ExtResource("3_vlead")]
+anchor_left = -1.761
+anchor_top = -2.055
+anchor_right = -0.877
+anchor_bottom = -0.892
+offset_left = -537.473
+offset_top = 6172.71
+offset_right = -538.821
+offset_bottom = 6174.06
+
+[node name="door4" parent="." instance=ExtResource("3_vlead")]
+anchor_left = -1.761
+anchor_top = -2.055
+anchor_right = -0.877
+anchor_bottom = -0.892
+offset_left = 17289.8
+offset_top = 6340.94
+offset_right = 17288.5
+offset_bottom = 6342.28
+
+[node name="door5" parent="." instance=ExtResource("3_vlead")]
+anchor_left = -1.761
+anchor_top = -2.055
+anchor_right = -0.877
+anchor_bottom = -0.892
+offset_left = 17121.6
+offset_top = -1248.02
+offset_right = 17120.2
+offset_bottom = -1246.67
