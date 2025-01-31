@@ -1,65 +1,71 @@
-[gd_scene load_steps=4 format=3 uid="uid://b4nh7jb71oxab"]
+[gd_scene load_steps=6 format=3 uid="uid://b4nh7jb71oxab"]
 
 [ext_resource type="Texture2D" uid="uid://dojdbf2d4ka4p" path="res://sheep.png" id="1_viopl"]
 [ext_resource type="Texture2D" uid="uid://gjpb3bo77il6" path="res://jackal.png" id="2_4p67d"]
+[ext_resource type="Script" path="res://sheepplayer.gd" id="2_omhmr"]
 [ext_resource type="PackedScene" uid="uid://cxh81s0uoeuxg" path="res://door.tscn" id="3_vlead"]
+[ext_resource type="Script" path="res://jackalnpc.gd" id="4_tbrng"]
 
-[node name="Sheep" type="Sprite2D"]
+[node name="Level" type="Node"]
+
+[node name="SheepPlayer" type="Sprite2D" parent="."]
 position = Vector2(315, 389)
 scale = Vector2(0.0534988, 0.0534988)
 texture = ExtResource("1_viopl")
+script = ExtResource("2_omhmr")
 
 [node name="Jackal" type="Sprite2D" parent="."]
-position = Vector2(9341.11, -56.0766)
-scale = Vector2(4.9899, 4.9899)
+position = Vector2(814.738, 386)
+scale = Vector2(0.266954, 0.266954)
 texture = ExtResource("2_4p67d")
+script = ExtResource("4_tbrng")
 
 [node name="door" parent="." instance=ExtResource("3_vlead")]
 anchor_left = 1.204
 anchor_top = -0.937
-anchor_right = 2.796
-anchor_bottom = 1.09
-offset_left = -53.0513
-offset_top = -1229.64
-offset_right = -53.2759
-offset_bottom = -1228.01
+anchor_right = 1.35263
+anchor_bottom = -0.589213
+offset_left = -914.008
+offset_top = 807.176
+offset_right = -914.233
+offset_bottom = 808.81
 
 [node name="door2" parent="." instance=ExtResource("3_vlead")]
 anchor_left = -1.761
 anchor_top = -2.055
-anchor_right = -0.877
-anchor_bottom = -0.892
-offset_left = -500.089
-offset_top = -1266.71
-offset_right = -501.438
-offset_bottom = -1265.36
+anchor_right = -1.67997
+anchor_bottom = -1.86418
+offset_left = 2081.67
+offset_top = 1382.64
+offset_right = 2080.32
+offset_bottom = 1383.99
 
 [node name="door3" parent="." instance=ExtResource("3_vlead")]
 anchor_left = -1.761
 anchor_top = -2.055
-anchor_right = -0.877
-anchor_bottom = -0.892
-offset_left = -537.473
-offset_top = 6172.71
-offset_right = -538.821
-offset_bottom = 6174.06
+anchor_right = -1.66348
+anchor_bottom = -1.81634
+offset_left = 2079.67
+offset_top = 1780.64
+offset_right = 2078.32
+offset_bottom = 1781.99
 
 [node name="door4" parent="." instance=ExtResource("3_vlead")]
-anchor_left = -1.761
+anchor_left = -1.76077
 anchor_top = -2.055
-anchor_right = -0.877
-anchor_bottom = -0.892
-offset_left = 17289.8
-offset_top = 6340.94
-offset_right = 17288.5
-offset_bottom = 6342.28
+anchor_right = -1.6563
+anchor_bottom = -1.82714
+offset_left = 3033.41
+offset_top = 1789.64
+offset_right = 3032.06
+offset_bottom = 1790.99
 
 [node name="door5" parent="." instance=ExtResource("3_vlead")]
-anchor_left = -1.761
+anchor_left = -1.76077
 anchor_top = -2.055
-anchor_right = -0.877
-anchor_bottom = -0.892
-offset_left = 17121.6
-offset_top = -1248.02
-offset_right = 17120.2
-offset_bottom = -1246.67
+anchor_right = -1.65283
+anchor_bottom = -1.82251
+offset_left = 3024.41
+offset_top = 1383.64
+offset_right = 3023.06
+offset_bottom = 1384.99
